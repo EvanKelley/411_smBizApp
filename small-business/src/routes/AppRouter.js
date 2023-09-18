@@ -1,12 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Listing from '../components/Listing';
 import Details from '../components/Details';
 import Login from '../components/Login';
 import LoggedInListing from '../components/LoggedInListing';
 import AddListing from '../components/AddListing';
 import PrivateRoute from './PrivateRoute';
-
 
 const AppRouter = ({ isAuthenticated }) => {
   return (
@@ -34,3 +33,4 @@ const AppRouter = ({ isAuthenticated }) => {
 };
 
 export default AppRouter;
+

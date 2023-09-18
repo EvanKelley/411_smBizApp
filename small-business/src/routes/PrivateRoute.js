@@ -1,9 +1,5 @@
-
-
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
-
-
+import { Redirect, Route } from 'react-router-dom';
 
 const PrivateRoute = ({ component: Component, isAuthenticated, ...rest }) => {
   return (

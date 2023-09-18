@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom'; 
 import businesses from '../data/businesses';
 
 const Listing = () => {
@@ -18,7 +18,9 @@ const Listing = () => {
         <tbody>
           {businesses.map((business) => (
             <tr key={business.id}>
-              <td>{business.name}</td>
+              <td>
+                <Link to={`/details/${business.id}`}>{business.name}</Link> {/* Create a link to the Details Screen */}
+              </td>
               <td>{business.description}</td>
               <td>{business.address}</td>
               <td>{business.operatingHours}</td>
